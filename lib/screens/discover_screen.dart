@@ -30,7 +30,7 @@ class DiscoverScreen extends StatelessWidget {
         bottomNavigationBar: const BottomNavBar(index: 1),
         body: ListView(
             padding: const EdgeInsets.all(20.0),
-            children: [_DiscoverNews(), _CategoryNews(tabs: tabs)]),
+            children: [const _DiscoverNews(), _CategoryNews(tabs: tabs)]),
       ),
     );
   }

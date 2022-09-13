@@ -101,7 +101,7 @@ class _BreakingNews extends StatelessWidget {
                               '${DateTime.now().difference(articles[index].createdAt).inHours} hours ago',
                               style: Theme.of(context).textTheme.bodySmall!),
                           const SizedBox(height: 5),
-                          Text('${articles[index].author}',
+                          Text(articles[index].author,
                               style: Theme.of(context).textTheme.bodySmall!),
                         ]),
                   ),

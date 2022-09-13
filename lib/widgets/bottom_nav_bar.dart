@@ -42,11 +42,7 @@ class BottomNavBar extends StatelessWidget {
         BottomNavigationBarItem(
           icon: Container(
             margin: const EdgeInsets.only(right: 50),
-            child: IconButton(
-                onPressed: () {
-                  print("no profile screen yet");
-                },
-                icon: const Icon(Icons.person)),
+            child: IconButton(onPressed: () {}, icon: const Icon(Icons.person)),
           ),
           label: 'Profile',
         ),
