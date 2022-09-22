@@ -139,6 +139,7 @@ class _NewsBody extends StatelessWidget {
                 return ImageContainer(
                   width: MediaQuery.of(context).size.width * 0.42,
                   imageUrl: article.imageUrl,
+                  margin: const EdgeInsets.all(5.0),
                 );
               })
         ],

@@ -20,15 +20,11 @@ class BottomNavBar extends StatelessWidget {
       unselectedItemColor: Colors.black.withAlpha(100),
       items: [
         BottomNavigationBarItem(
-          icon: Container(
-            margin: const EdgeInsets.only(left: 50),
-            child: IconButton(
+          icon: IconButton(
               onPressed: () {
                 Navigator.pushNamed(context, HomeScreen.routeName);
               },
-              icon: const Icon(Icons.home),
-            ),
-          ),
+              icon: const Icon(Icons.home)),
           label: 'Home',
         ),
         BottomNavigationBarItem(
@@ -39,13 +35,13 @@ class BottomNavBar extends StatelessWidget {
               icon: const Icon(Icons.search)),
           label: 'Search',
         ),
-        BottomNavigationBarItem(
-          icon: Container(
-            margin: const EdgeInsets.only(right: 50),
-            child: IconButton(onPressed: () {}, icon: const Icon(Icons.person)),
-          ),
-          label: 'Profile',
-        ),
+        // BottomNavigationBarItem(
+        //   icon: Container(
+        //     margin: const EdgeInsets.only(right: 50),
+        //     child: IconButton(onPressed: () {}, icon: const Icon(Icons.person)),
+        //   ),
+        //   label: 'Profile',
+        // ),
       ],
     );
   }

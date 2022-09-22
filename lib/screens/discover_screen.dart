@@ -11,7 +11,13 @@ class DiscoverScreen extends StatelessWidget {
   static const routeName = '/discover';
   @override
   Widget build(BuildContext context) {
-    List<String> tabs = ['Health', 'Politics', 'Art', 'Food', 'Science'];
+    List<String> tabs = [
+      'Diskominfo',
+      'Dikes',
+      'Disperindag',
+      'Diskop',
+      'Dis..'
+    ];
     return DefaultTabController(
       initialIndex: 0,
       length: tabs.length,
@@ -19,13 +25,13 @@ class DiscoverScreen extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          leading: IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.menu,
-              color: Colors.white,
-            ),
-          ),
+          // leading: IconButton(
+          //   onPressed: () {},
+          //   icon: const Icon(
+          //     Icons.menu,
+          //     color: Colors.white,
+          //   ),
+          // ),
         ),
         bottomNavigationBar: const BottomNavBar(index: 1),
         body: ListView(
@@ -178,7 +184,7 @@ class _DiscoverNews extends StatelessWidget {
           ),
           const SizedBox(height: 5),
           Text(
-            'News from all over the world',
+            'Berita Sekitar Lombok Barat',
             style: Theme.of(context).textTheme.bodySmall!,
           ),
           const SizedBox(height: 20),
